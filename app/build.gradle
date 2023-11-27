@@ -10,11 +10,11 @@ plugins {
 }
 
 android {
-    namespace 'com.muratozturk.conversai'
+    namespace 'com.aikonia.aikonia.ai'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.muratozturk.conversai"
+        applicationId "com.aikonia.aikonia.ai"
         minSdk 24
         targetSdk 33
         versionCode 1

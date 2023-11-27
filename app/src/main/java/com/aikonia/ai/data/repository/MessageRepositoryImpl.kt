@@ -1,0 +1,19 @@
+package com.aikonia.ai.data.repository
+
+import com.aikonia.ai.data.model.MessageModel
+import com.aikonia.ai.data.source.local.ConversAIDao
+import com.aikonia.ai.domain.repository.MessageRepository
+import javax.inject.Inject
+
+class MessageRepositoryImpl @Inject constructor(
+    private val conversAIDao: ConversAIDao,
+) : MessageRepository {
+    override suspend fun getMessages(conversationId: String): List<MessageModel> =
+        conversAIDao.getMessages(conversationId)
+
+    override suspend fun addMessage(message: MessageModel) =
+        conversAIDao.addMessage(message)
+
+    override suspend fun deleteMessages(conversationId: String) =
+        conversAIDao.deleteMessages(conversationId)
+}

@@ -20,7 +20,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:name=".ConversAIApp"
+        android:name=".Aikonia"
         android:theme="@style/Theme.ConversAI"
         tools:targetApi="31">
         <activity
